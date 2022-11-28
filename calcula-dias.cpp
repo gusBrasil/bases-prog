@@ -4,12 +4,10 @@
 // Disponível também em: https://github.com/gusBrasil/bases-prog
 
 #include <iostream>
-
 using namespace std;
 
 int dia, mes, ano;
 int diaAtual = 3, mesAtual = 11, anoAtual = 2022;
-
 
 int main()
 {
