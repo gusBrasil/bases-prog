@@ -2,7 +2,7 @@
 // de Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... etc, caracterizando-se
 // pela soma de um termo posterior com o seu anterior subseqüente.
 
-// Programa feito por Gustavo Medeiros Brasil para a aula de Bases de Programaçãow
+// Programa feito por Gustavo Medeiros Brasil para a matéria de Bases de Programação
 
 #include <stdio.h>
 #include <iostream>
