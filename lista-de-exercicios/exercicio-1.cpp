@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-int B = 0, E = 0, i = 0, resultado = 0;
+int B = 1, E = 1, i = 1, resultado = 1;
 
 int main() {
     cout << "Determine o valor da base: "; cin >> B;
