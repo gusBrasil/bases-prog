@@ -1,3 +1,11 @@
+// Ler dois vetores A e B com 12 elementos. O vetor A deve aceitar apenas a entrada de valores
+// que sejam divisíveis por 2 ou 3, enquanto o vetor B deve aceitar apenas a entrada de valores
+// que não sejam múltiplos de 5. A entrada dos vetores deve ser validada pelo programa e não
+// pelo usuário. Construir um vetor C de forma que este seja a junção dos vetores A e B,
+// contendo 24 elementos. Apresentar o vetor C.
+
+// Programa feito por Gustavo Medeiros Brasil para a matéria de Bases de Programação
+
 #include <iostream>
 #include <vector>
 using namespace std;
