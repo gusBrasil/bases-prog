@@ -1,52 +1,74 @@
+// Ler 6 elementos (valores inteiros) para os vetores A e B. Construir os vetores C e D do
+// mesmo tipo, sendo que o vetor C deve ser formado pelos elementos de índice ímpar dos
+// vetores A e B, e o vetor D deve ser formado pelos elementos de índice par dos vetores A e B.
+// Apresentar os vetores C e D.
+
+// Programa feito por Gustavo Medeiros Brasil para a matéria de Bases de Programação
+
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int i=0, p=0;    
-    int c, a[6]={}, b[6]={};
-    int para =0, impd = 0;
+
+    int i, A[6]={}, B[6]={}, C[6]={}, D[6];
+    int numImpar = 0, numPar = 0;
     
-    for (c=0; c<6; c++) {
-        cin >> a[c];
-        if (a[c]%2==0) {
-            p++; 
-        } else{
-            i++; }
+    for (i = 0; i < 6; i++) {
+        cout << "A[" << i << "] = ";
+        cin >> A[i];
     }
-    for (c=0; c<6; c++) {
-        cin >> b[c];
-        if (b[c]%2==0) {
-            p++; 
-        }else{
-            i++; }
+    
+    for (i = 0; i < 6; i++) {
+        cout << "B[" << i << "] = ";
+        cin >> B[i];
     }
-    int C[p], D[i];
-    for (c=0; c<6; c++){
-            if (a[c] % 2 == 0){
-                C[para] = a[c];
-                para ++;
-            }else {
-                D[impd] = a[c];
-                impd ++; }
+    
+    for (i = 0; i < 6; i++) {
+        if (i % 2 == 0) {
+            D[numPar] = A[i];
+            numPar++;
+        } else if (i % 2 == 1){
+            C[numImpar] = A[i];
+            numImpar++;
+        }
     }
-    for (c=0; c<6; c++){
-            if (b[c] % 2 == 0){
-                C[para] = b[c];
-                para++;
-            }else{
-                D[impd] = b[c];
-                impd++; }
-    } cout << "\n";
-    for (int ping = 0; ping < 6; ping++){
-        cout << " " << a[ping] << " "; }
-        cout << "\n";
-    for (int ping = 0; ping < 6; ping++){
-        cout << " " << b[ping] << " "; }
-        cout << "\n";
-    for (int ping = 0; ping < para; ping ++){
-        cout << " " << C[ping] << " "; }
-        cout << "\n";
-    for (int ping = 0; ping < impd; ping ++){
-        cout << " " << D[ping] << " "; }
+    
+    for (i = 0; i < 6; i++) {
+        if(i % 2 == 0){
+            D[numPar] = B[i];
+            numPar++;
+        } else if (i % 2 == 1) {
+            C[numImpar] = B[i];
+            numImpar++;
+        }
+    }
+
+    cout << "\n";
+    cout << "A = [";
+    for (int count = 0; count < 6; count++){
+        cout << " " << A[count] << " ";
+    }
+    cout << "]";
+
+    cout << "\n";
+    cout << "B = [";
+    for (int count = 0; count < 6; count++){
+        cout << " " << B[count] << " ";
+    }
+    cout << "]";
+        
+    cout << "\n";
+    cout << "C = [";
+    for (int count = 0; count < 6; count ++){
+        cout << " " << C[count] << " ";
+    }
+    cout << "]";
+        
+    cout << "\n";
+    cout << "D = [";
+    for (int count = 0; count < 6; count ++){
+        cout << " " << D[count] << " ";
+    }
+    cout << "]";
 }
