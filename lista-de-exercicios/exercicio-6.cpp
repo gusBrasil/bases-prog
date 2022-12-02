@@ -4,7 +4,7 @@ using namespace std;
 
 int A [12];
 int B [12];
-int C [24];
+int C [25];
 int i;
 bool certo;
 
@@ -38,7 +38,7 @@ int main(){
         C[i] = A[i];
         C[i+12] = B[i];
     }
-	for(i=0; i<24; i++){
-		cout << C[i] << "\n";
+	for(i=1; i<=24; i++){
+		cout << i << ". " << C[i] << "\n";
 	}    
 }
