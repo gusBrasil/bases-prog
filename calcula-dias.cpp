@@ -7,7 +7,7 @@
 using namespace std;
 
 int dia, mes, ano;
-int diaAtual = 3, mesAtual = 11, anoAtual = 2022;
+int diaAtual = 8, mesAtual = 12, anoAtual = 2022;
 
 int main()
 {
