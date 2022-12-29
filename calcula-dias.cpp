@@ -1,5 +1,6 @@
 // um programa em C++ que solicita ao usuario a digitação do dia, mês e ano do nascimento, informando quantos dias
 // a pessoa viveu. Considerando anos de 365 e meses de 30 dias.
+
 // Programa feito por Gustavo Medeiros Brasil para a matéria Bases de Programação
 // Disponível também em: https://github.com/gusBrasil/bases-prog
 
